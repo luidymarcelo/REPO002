@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
@@ -15,22 +15,29 @@
 </head>
 
 <body class="flex min-h-screen items-center justify-center bg-gray-50 py-10">
-
     <main class="w-10/12 max-w-xl space-y-10">
-
-      <img src="favorite-colored-yoshi-from-super-mario-world-v0-u80uxqgz9lza1-removebg-preview.png" class="h-16 w-16">
-
-      <article class="space-y-5 text-lg leading-relaxed text-gray-800">
-        <p>
+      <h1 class="flex items-center">
+        <img src="favorite-colored-yoshi-from-super-mario-world-v0-u80uxqgz9lza1-removebg-preview.png" class="h-16 w-16">
+        <!-- Botão de seleção de idioma -->
+        <select id="languageSwitcher" class="w-12/12 max-w-xl space-y-10 text-lg leading-relaxed text-gray-800" style="background-color: transparent; align-self:center; border-color: black;">
+          <option value="pt" style="background-color: transparent;">Português</option>
+          <option value="en" style="background-color: transparent;">English</option>
+          <option value="es" style="background-color: transparent;">Spanish</option>
+        </select>
+      </h1>
+      
+      <article class="space-y-5 text-lg" id="content">
+        <p id="greeting">
           Olá! sou Luidy de Oliveira um Analista de Sistemas e desenvolvedor Jr de software, sou formado em Análise de dados e atuo utilizando as linguagens ADVPL, Harbour e JavaScript, também
           atuo no desenvolvimento de soluções em sistemas integrados ao ERP Protheus.
         </p>
-        <p>
-          Atualmente trabalho na empresa Itacorda, e me sinto muito feliz, tenho muito prazer em que faço e estou sempre buscando novos conhecimentos, gosto de leitura em livros
-          de desenvolvimento de sistemas e ciência de dados. Para o futuro desejo me especializar na área de desenvolvimento de software e conquistar algumas certitificações Oracle para atuação em DBA 
-          onde já tenho um vasto conhecimento porém ainda necessito de mais amadurecimento.
+        <p id="work">
+          Atualmente trabalho na empresa Itacorda, empresa no ramo de corda com filial em Brasil e Paraguai sendo sua sede no Brasil, e me sinto muito feliz, tenho muito prazer em que faço e 
+          estou sempre buscando novos conhecimentos, gosto de leitura em livros de desenvolvimento de sistemas e ciência de dados. Para o futuro desejo me 
+          especializar na área de desenvolvimento de software e conquistar algumas certitificações Oracle para atuação em DBA onde já tenho um vasto conhecimento 
+          porém ainda necessito de mais amadurecimento.
         </p>
-        <p>
+        <p id="contact">
           Se quiser me conhecer melhor acesse minhas redes sociais abaixo!
         </p>
       </article>
@@ -43,5 +50,7 @@
         <a rel="noopener" href="https://www.instagram.com/_oliveiraluidy">Instagram</a>
       </nav>
     </main>
-</body></html>
+
+    <script src="script.js"></script>
+</body>
 </html>
